@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (5.6.4)
+  - Cosmos (23.0.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - PINCache (3.0.3):
+    - PINCache/Arc-exception-safe (= 3.0.3)
+    - PINCache/Core (= 3.0.3)
+  - PINCache/Arc-exception-safe (3.0.3):
+    - PINCache/Core
+  - PINCache/Core (3.0.3):
+    - PINOperation (~> 1.2.1)
+  - PINOperation (1.2.2)
+  - PINRemoteImage (3.0.3):
+    - PINRemoteImage/PINCache (= 3.0.3)
+  - PINRemoteImage/Core (3.0.3):
+    - PINOperation
+  - PINRemoteImage/PINCache (3.0.3):
+    - PINCache (~> 3.0.3)
+    - PINRemoteImage/Core
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - Cosmos (~> 23.0)
+  - Moya (~> 15.0)
+  - PINRemoteImage
+  - youtube-ios-player-helper
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - Moya
+    - PINCache
+    - PINOperation
+    - PINRemoteImage
+    - youtube-ios-player-helper
+
+SPEC CHECKSUMS:
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
+  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
+  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: 3d7d2203d1fa3e01ad966dd544ac779d185f53b1
+
+COCOAPODS: 1.11.2
