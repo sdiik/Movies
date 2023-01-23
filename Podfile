@@ -1,14 +1,16 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'MovieList' do
+target 'Movies' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   
-  pod 'Moya', '~> 15.0'
-  pod 'PINRemoteImage'
-  pod "youtube-ios-player-helper"
   pod 'Cosmos', '~> 23.0'
-  # Pods for MovieList
+  pod 'Moya/RxSwift', '~> 12.0'
+  pod 'RxSwift', '~> 4.0'
+  pod 'RxCocoa', '~> 4.0'
+  pod 'SDWebImageSwiftUI'
+  pod "youtube-ios-player-helper"
+  # Pods for Movies
 
 end

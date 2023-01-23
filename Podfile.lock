@@ -1,31 +1,29 @@
 PODS:
-  - Alamofire (5.6.4)
+  - Alamofire (4.9.1)
   - Cosmos (23.0.0)
-  - Moya (15.0.0):
-    - Moya/Core (= 15.0.0)
-  - Moya/Core (15.0.0):
-    - Alamofire (~> 5.0)
-  - PINCache (3.0.3):
-    - PINCache/Arc-exception-safe (= 3.0.3)
-    - PINCache/Core (= 3.0.3)
-  - PINCache/Arc-exception-safe (3.0.3):
-    - PINCache/Core
-  - PINCache/Core (3.0.3):
-    - PINOperation (~> 1.2.1)
-  - PINOperation (1.2.2)
-  - PINRemoteImage (3.0.3):
-    - PINRemoteImage/PINCache (= 3.0.3)
-  - PINRemoteImage/Core (3.0.3):
-    - PINOperation
-  - PINRemoteImage/PINCache (3.0.3):
-    - PINCache (~> 3.0.3)
-    - PINRemoteImage/Core
+  - Moya/Core (12.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 4.0)
+  - Moya/RxSwift (12.0.1):
+    - Moya/Core
+    - RxSwift (~> 4.0)
+  - Result (4.1.0)
+  - RxCocoa (4.5.0):
+    - RxSwift (>= 4.4.2, ~> 4.4)
+  - RxSwift (4.5.0)
+  - SDWebImage (5.14.3):
+    - SDWebImage/Core (= 5.14.3)
+  - SDWebImage/Core (5.14.3)
+  - SDWebImageSwiftUI (2.2.2):
+    - SDWebImage (~> 5.10)
   - youtube-ios-player-helper (1.0.4)
 
 DEPENDENCIES:
   - Cosmos (~> 23.0)
-  - Moya (~> 15.0)
-  - PINRemoteImage
+  - Moya/RxSwift (~> 12.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SDWebImageSwiftUI
   - youtube-ios-player-helper
 
 SPEC REPOS:
@@ -33,20 +31,24 @@ SPEC REPOS:
     - Alamofire
     - Cosmos
     - Moya
-    - PINCache
-    - PINOperation
-    - PINRemoteImage
+    - Result
+    - RxCocoa
+    - RxSwift
+    - SDWebImage
+    - SDWebImageSwiftUI
     - youtube-ios-player-helper
 
 SPEC CHECKSUMS:
-  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
-  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
-  PINCache: 7a8fc1a691173d21dbddbf86cd515de6efa55086
-  PINOperation: daa34d4aa1d8449089be7d405b9d974abc4724c6
-  PINRemoteImage: f1295b29f8c5e640e25335a1b2bd9d805171bd01
+  Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
+  RxCocoa: cbf70265dc65a981d4ac982e513c10cf23df24a0
+  RxSwift: f172070dfd1a93d70a9ab97a5a01166206e1c575
+  SDWebImage: 9c36e66c8ce4620b41a7407698dda44211a96764
+  SDWebImageSwiftUI: 54ded4115b4ac6cd60b78f61415f86d070892d98
   youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
 
-PODFILE CHECKSUM: 3d7d2203d1fa3e01ad966dd544ac779d185f53b1
+PODFILE CHECKSUM: 1234dfed32afb58e7d878416f0527f598052ac07
 
 COCOAPODS: 1.11.2
