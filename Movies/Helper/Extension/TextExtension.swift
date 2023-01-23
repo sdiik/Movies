@@ -20,3 +20,13 @@ func setEmptyTitle(with title: String) -> some View  {
         .font(.system(size: 16, weight: .semibold))
         .frame(maxWidth: .infinity, alignment: .center)
 }
+
+extension Text {
+    var titleStyle : Text {
+        self.font(.system(size: 14, weight: .semibold, design: .default))
+    }
+    
+    var descriptionStyle : Text {
+        self.font(.system(size: 14, weight: .regular, design: .default))
+    }
+}

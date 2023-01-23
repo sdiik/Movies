@@ -21,17 +21,6 @@ enum TabBarEntity {
         }
     }
     
-    var navigationTitle: String {
-        switch self {
-        case .favorite:
-            return "Favorites Movie"
-        case .home:
-            return "Movies"
-        case .search:
-            return ""
-        }
-    }
-    
     var taBarImage: String {
         switch self {
         case .favorite:

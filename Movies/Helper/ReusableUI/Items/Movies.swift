@@ -19,7 +19,9 @@ struct Movies: View {
                     ScrollView(.horizontal) {
                         LazyHStack {
                             ForEach(self.moviesModel.lastMovies) { last in
-                                Movie(movie: last)
+                                NavigationLink(destination: DetailView(movieId: last.id)) {
+                                    Movie(movie: last)
+                                }
                             }
                         }.padding()
                     }
@@ -29,7 +31,9 @@ struct Movies: View {
                     ScrollView(.horizontal) {
                         LazyHStack {
                             ForEach(self.moviesModel.actionMovies) { action in
-                                Movie(movie: action)
+                                NavigationLink(destination: DetailView(movieId: action.id)) {
+                                    Movie(movie: action)
+                                }
                             }
                         }.padding()
                     }

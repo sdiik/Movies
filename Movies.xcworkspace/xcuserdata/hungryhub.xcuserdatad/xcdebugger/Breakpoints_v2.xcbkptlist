@@ -3,4 +3,54 @@
    uuid = "197EAFCF-D6BE-4F68-9DFD-71751ADFD8AB"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31C0251E-2FF3-4AA1-AC53-B24A4775EEAE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Movies/Helper/Extension/NavigationExtension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "11"
+            endingLineNumber = "11"
+            landmarkName = "setNavigationBar(with:menuTab:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "31C0251E-2FF3-4AA1-AC53-B24A4775EEAE - 865022a4f81b8bbe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Movies.setNavigationBar&lt;&#x3c4;_0_0 where &#x3c4;_0_0: SwiftUI.View&gt;(with: Movies.TabBarEntity, menuTab: &#x3c4;_0_0) -&gt; some"
+                  moduleName = "Movies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hungryhub/IOS/Test/Movies/Movies/Helper/Extension/NavigationExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "878">
+               </Location>
+               <Location
+                  uuid = "31C0251E-2FF3-4AA1-AC53-B24A4775EEAE - cf2c3407a32d597d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.navigationBarTitle(_: SwiftUI.LocalizedStringKey, displayMode: SwiftUI.NavigationBarItem.TitleDisplayMode) -&gt; some&gt;&gt;.0 in Movies.setNavigationBar&lt;&#x3c4;_0_0 where &#x3c4;_0_0: SwiftUI.View&gt;(with: Movies.TabBarEntity, menuTab: &#x3c4;_0_0) -&gt; some"
+                  moduleName = "Movies"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hungryhub/IOS/Test/Movies/Movies/Helper/Extension/NavigationExtension.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

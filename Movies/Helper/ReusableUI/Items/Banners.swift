@@ -17,7 +17,9 @@ struct Banners: View {
                 ScrollView(.horizontal) {
                     LazyHStack {
                         ForEach(self.moviesModel.popularMovies) { popularMovie in
-                            Banner(movie: popularMovie)
+                            NavigationLink(destination: DetailView(movieId: popularMovie.id)) {
+                                Banner(movie: popularMovie)
+                            }
                         }
                     }.padding()
                 }

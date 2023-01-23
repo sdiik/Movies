@@ -9,7 +9,7 @@ import SwiftUI
 
 func setNavigationBar(with tabBar: TabBarEntity, menuTab: some View) -> some View {
     NavigationView {
-        menuTab.navigationTitle(tabBar.navigationTitle)
+        menuTab.navigationBarTitle("", displayMode: .inline)
     }.navigationBarHidden(false)
         .navigationBarBackButtonHidden(true)
         .navigationViewStyle(StackNavigationViewStyle())
