@@ -3,18 +3,18 @@
 Movies is application for searching movies and describing movies
 
 used:
-SwiftUI
+- SwiftUI
 
 architect used :
-Viper architecture
+- Viper architecture
 
 the libraries used :
-Cosmos
-Moya/RxSwift
-RxSwift
-RxCocoa
-SDWebImageSwiftUI'
-youtube-ios-player-helper
+- Cosmos
+- Moya/RxSwift
+- RxSwift
+- RxCocoa
+- SDWebImageSwiftUI'
+- youtube-ios-player-helper
 
 Home Movie:
 
