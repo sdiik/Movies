@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct DetailView: View {
     
@@ -23,11 +24,15 @@ struct DetailView: View {
                         Text(detailModel.detailMovie?.overview ?? "").descriptionStyle
                         RatingMovieView(detailModel: detailModel)
                     }.padding([.leading, .trailing], 16)
+                    Reviews(detailModel: detailModel)
                 }
             }
         }
         .onAppear {
             detailModel.idMovie = movieId ?? 0
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .navigationBarItems(trailing: FavoriteButtonView(movieId: movieId))
+        .background(Color(UIColor(named: "background_color")!))
     }
 }

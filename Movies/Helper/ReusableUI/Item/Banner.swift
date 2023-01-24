@@ -25,7 +25,7 @@ struct Banner: View {
             VStack(alignment: .leading, spacing: 4) {
                 Spacer()
                 Text(self.movie.title ?? "-").font(.system(size: 14, weight: .semibold)).frame(width: UIScreen.main.bounds.width - 120, alignment: .leading)
-                Text(self.movie.overview ?? "-").font(.system(size: 12)).lineLimit(3)
+                Text(self.movie.overview ?? "-").font(.system(size: 12)).lineLimit(3).frame(alignment: .leading)
                 Spacer()
             }
             Spacer()

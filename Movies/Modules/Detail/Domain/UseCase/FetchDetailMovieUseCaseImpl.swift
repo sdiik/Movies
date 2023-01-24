@@ -22,4 +22,8 @@ class FetchDetailMovieUseCaseImpl: FetchDetailMovieUseCase {
     func videosMovieExecute(with id: Int) -> FetchVideosMovieResult {
         return detailMovieRepository.fetchVideosMovie(with: id)
     }
+    
+    func reviewsMovieExecute(with id: Int, pageNumber: Int) -> FetchReviewsMovieResult {
+        return detailMovieRepository.fetchReviewsMovie(with: id, pageNumber: pageNumber)
+    }
 }

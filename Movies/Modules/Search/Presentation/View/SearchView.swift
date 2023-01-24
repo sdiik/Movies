@@ -24,10 +24,12 @@ struct SearchView: View {
                     ScrollViewReader { reader in
                         LazyVStack {
                             ForEach(self.searchModel.searchMovies) { searchModel in
-                                Banner(movie: searchModel)
-                                    .onAppear {
-                                        self.searchModel.fetchSearchMovie()
-                                    }
+                                NavigationLink(destination: DetailView(movieId: searchModel.id)) {
+                                    Banner(movie: searchModel)
+                                        .onAppear {
+                                            self.searchModel.fetchSearchMovie()
+                                        }
+                                }
                             }
                             if self.searchModel.isLoading {
                                 ProgressView()

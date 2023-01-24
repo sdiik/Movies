@@ -11,4 +11,5 @@ protocol FetchDetailMovieUseCase {
     
     func detailMovieExecute(with id: Int) -> FetchDetailMovieResult
     func videosMovieExecute(with id: Int) -> FetchVideosMovieResult
+    func reviewsMovieExecute(with id: Int, pageNumber: Int) -> FetchReviewsMovieResult
 }

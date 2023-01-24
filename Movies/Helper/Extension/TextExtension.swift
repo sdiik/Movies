@@ -22,6 +22,10 @@ func setEmptyTitle(with title: String) -> some View  {
 }
 
 extension Text {
+    var headerStyle : Text {
+        self.font(.system(size: 16, weight: .semibold, design: .default))
+    }
+    
     var titleStyle : Text {
         self.font(.system(size: 14, weight: .semibold, design: .default))
     }

@@ -28,4 +28,17 @@ class DetailMovieFactoryImpl: DetailMovieFactory {
         request["api_key"] = API_KEY
         return request
     }
+    
+    func createReviewMovieURL(with id: Int) -> String {
+        return "movie/\(id)/reviews"
+    }
+    
+    func createReviewMovieRequestParams(pageNumber: Int) -> [String : Any] {
+        var request = [String: Any]()
+        request["api_key"] = API_KEY
+        request["page"] = pageNumber
+        return request
+
+    }
+    
 }

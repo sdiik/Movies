@@ -14,5 +14,5 @@ func showImage(with url: String) -> some View {
         .transition(.fade(duration: 0.5))
         .scaledToFit()
         .cornerRadius(radius: 12.0, corners: [.topLeft, .topRight])
-        .frame(width: UIScreen.main.bounds.width, height: 150, alignment: .center)
+        .frame(width: UIScreen.main.bounds.width, height: 200, alignment: .center)
 }

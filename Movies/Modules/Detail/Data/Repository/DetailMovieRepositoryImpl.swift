@@ -19,12 +19,20 @@ struct DetailMovieRepositoryImpl: DetailMovieRepository {
     }
     
     func fetchDetailMovie(with id: Int) -> FetchDetailMovieResult {
-        let api = API.moviesApi(url: detailMovieFactory.createDetailMovieURL(with: id), request: detailMovieFactory.createDetailMovieRequestParams())
+        let api = API.moviesApi(url: detailMovieFactory.createDetailMovieURL(with: id),
+                                request: detailMovieFactory.createDetailMovieRequestParams())
         return networkRepository.request(target: api)
     }
     
     func fetchVideosMovie(with id: Int) -> FetchVideosMovieResult {
-        let api = API.moviesApi(url: detailMovieFactory.createVideosMovieURL(with: id), request: detailMovieFactory.createVideosMovieRequestParams())
+        let api = API.moviesApi(url: detailMovieFactory.createVideosMovieURL(with: id),
+                                request: detailMovieFactory.createVideosMovieRequestParams())
+        return networkRepository.request(target: api)
+    }
+    
+    func fetchReviewsMovie(with id: Int, pageNumber: Int) -> FetchReviewsMovieResult {
+        let api = API.moviesApi(url: detailMovieFactory.createReviewMovieURL(with: id),
+                                request: detailMovieFactory.createReviewMovieRequestParams(pageNumber: pageNumber))
         return networkRepository.request(target: api)
     }
     

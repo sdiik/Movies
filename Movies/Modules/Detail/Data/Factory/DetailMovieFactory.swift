@@ -12,4 +12,6 @@ protocol DetailMovieFactory {
     func createDetailMovieRequestParams() -> [String: Any]
     func createVideosMovieURL(with id: Int) -> String
     func createVideosMovieRequestParams() -> [String: Any]
+    func createReviewMovieURL(with id: Int) -> String
+    func createReviewMovieRequestParams(pageNumber: Int) -> [String: Any]
 }
